@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="/images/sersolislogo.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="/css/index.css" />
+    <title>Sersolis</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo"><a href="/"><img src="/images/sersolislogo.png" alt=""></a></div>
+      <nav class="navbar">
+        <ul>
+          <li><a href="/equipe">Equipe</a></li>
+          <li><a href="/sobre">Sobre Nós</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <div class="headline-container">
+          <h3 class="headline">
+            Servidor profissional adaptado às suas necesidades com nossos
+            serviços.
+          </h3>
+        </div>
+        <div class="button">
+          <h3 class="btn-link">
+            <a href="https://discord.gg/QkpMt8Ksdy" target="_blank"
+              >Contratar Serviços</a
+            >
+          </h3>
+        </div>
+      </section>
+      <hr>
+      <section class="services-container">
+        <div class="headline-container">
+          <h1 class="headline">Confira Nossos Serviços</h1>
+        </div>
+        <div class="grid-container">
+          <div class="card">
+            <h2>Desenvolvimento de Servidores</h2>
+            <hr />
+            <p>
+              A nossa equipe é especialista em criar servidores discord que atendem às suas necessidades e expectativas. Entre em contato e confira!
+            </p>
+          </div>
+          <div class="card">
+            <h2>Análise de Vulnerabilidades</h2>
+            <hr />
+            <p>Nossa equipe testa vulnerabilidades em servidores discord para garantir a segurança e privacidade do seu servidor.</p>
+          </div>
+          <div class="card">
+            <h2>Desenvolvimento de bot personalizado</h2>
+            <hr />
+            <p>Nossa equipe cria bots personalizados para servidores discord que atendem às suas necessidades e desejos.
+            </p>
+          </div>
+          <div class="card">
+            <h2>Configurações de bots</h2>
+            <hr />
+            <p>Especializados em configurar bots do discord para diversos fins</p>
+          </div>
+          <div class="card">
+            <h2>Design de banners</h2>
+            <hr />
+            <p>Faça seu banner com nossa equipe e tenha uma comunidade discord mais atraente e dinâmica.</p>
+          </div>
+        </div>
+      </section>
+      <hr>
+      <section>
+        <h1 id="info-card">Informações</h1>
+        <div class="cards-info">
+          <div class="card" id="item-1">
+            <img src="/icons/clients.png" alt="">
+            <h2><%= clients %></h2>
+            <h3>Clientes Conosco</h3>
+          </div>
+          <div class="card" id="item-2">
+            <img src="/icons/ferramentas.png" alt="">
+            <h2>5</h2>
+            <h3>Serviços</h3>
+          </div>
+          <div class="card" id="item-3">
+            <img src="/icons/team.png" alt="">
+            <h2>8</h2>
+            <h3>Pessoas na Equipe</h3>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-grid">
+          <div class="rules">
+            <h3 class="main-text">Diretrizes</h3>
+            <div class="link">
+              <a href="/termosdeuso"><h5>Termos de Uso</h5></a>
+              <a href="/politicadeprivacidade"><h5>Política de Privacidade</h5></a>
+            </div>
+          </div>
+          <div class="contacts">
+            <h3 class="main-text">Contatos</h3>
+            <div class="link">
+              <a href="https://discord.gg/QkpMt8Ksdy" target="_blank"><h5>Contratar Serviços</h5></a>
+            </div>
+          </div>
+          <div class="reserved">
+            <div class="reserved-text">
+              <h3 class="main-text">Copyright &copy; <%= serverName %> - Todos os Direitos Reservados</h3>
+              <img src="../images/sersolislogo.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

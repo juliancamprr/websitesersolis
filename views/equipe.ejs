@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/images/sersolislogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/equipe.css">
+    <title>Nossa Equipe</title>
+  </head>
+  <body>
+    <header>
+        <div class="logo"><a href="/"><img src="/images/sersolislogo.png" alt=""></a></div>
+      <nav class="navbar">
+        <ul>
+          <li><a href="/equipe">Equipe</a></li>
+          <li><a href="/sobre">Sobre Nós</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h2>Nossa equipe</h2>
+            <% users.forEach(user => { %>
+                <div class="profile">
+                    <img src="<%= user.avatarURL %>" alt="Foto de perfil">
+                    <div class="info">
+                        <h1><%= user.name %></h1>
+                        <p id="first"><%= user.profession %></p>
+                        <p id="second"><%= user.description %></p>
+                    </div>
+                </div>
+            <% }) %>
+        </div>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-grid">
+          <div class="rules">
+            <h3 class="main-text">Diretrizes</h3>
+            <div class="link">
+              <a href="/termosdeuso"><h5>Termos de Uso</h5></a>
+              <a href="/politicadeprivacidade"><h5>Política de Privacidade</h5></a>
+            </div>
+          </div>
+          <div class="contacts">
+            <h3 class="main-text">Contatos</h3>
+            <div class="link">
+              <a href="https://discord.gg/QkpMt8Ksdy" target="_blank"><h5>Contratar Serviços</h5></a>
+            </div>
+          </div>
+          <div class="reserved">
+            <div class="reserved-text">
+              <h3 class="main-text">Copyright &copy; Sersolis - Todos os Direitos Reservados</h3>
+              <img src="../images/sersolislogo.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
